@@ -1,0 +1,139 @@
+1)
+
+~$ mkdir FISAT
+~$ cd FISAT
+~/FISAT$ mkdir Day1
+~/FISAT$ cd Day1
+~/FISAT/Day1$ touch F1
+~/FISAT/Day1$ touch F2
+~/FISAT/Day1$ touch F3
+~/FISAT/Day1$ cd ..
+~/FISAT$ mkdir Day2
+~/FISAT$ cd Day2
+~/FISAT/Day2$ touch m1
+~/FISAT/Day2$ touch m2
+~/FISAT/Day2$ cd ..
+~/FISAT$ mkdir Day3
+~/FISAT$ cd Day3
+~/FISAT/Day3$ touch c1
+~/FISAT/Day3$ touch c2
+~/FISAT/Day3$ cd ..
+~/FISAT$ cd Day2
+
+Q1)
+
+~/FISAT/Day2$ cat>m1
+hi,hello
+~/FISAT/Day2$ cat>m2
+how are you
+~/FISAT/Day2$ cat m1 m2>m3
+~/FISAT/Day2$ cat m3
+hi,hello
+how are you
+
+Q2)
+
+~/FISAT/Day2$ cd ..
+~/FISAT$ cp Day2/m3 Day3/c3
+~/FISAT$ cd Day2
+
+~/FISAT/Day2$ ls
+Day  m1  m2  m3
+
+~/FISAT/Day2$ cd ..
+~/FISAT$ cd Day3
+
+~/FISAT/Day3$ ls
+c1  c2  c3
+
+~/FISAT/Day3$ cat c3
+hi,hello
+how are you
+
+
+Q3)
+
+ls -l F1
+-rw-r--r-- 1 exam exam 0 Oct  8 09:49 F1
+chmod a+w F1
+ls -l F1
+-rw-rw-rw- 1 exam exam 0 Oct  8 09:49 F1
+
+
+
+Q4)
+
+top
+
+top - 10:07:11 up 29 min,  1 user,  load average: 0.16, 0.14, 0.27
+Tasks: 199 total,   2 running, 197 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  0.2 us,  0.6 sy,  0.0 ni, 99.0 id,  0.1 wa,  0.0 hi,  0.2 si,  0.0 st
+MiB Mem :   7857.4 total,   5777.4 free,    932.3 used,   1147.7 buff/cache
+MiB Swap:   3990.0 total,   3990.0 free,      0.0 used.   6650.8 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND  
+    486 root      20   0  254752  16996  14388 S   4.0   0.2   0:51.11 Network+ 
+   6069 root      20   0       0      0      0 I   1.0   0.0   0:01.32 kworker+ 
+    139 root       0 -20       0      0      0 I   0.3   0.0   0:01.23 kworker+ 
+    562 mongodb   20   0 1494520 116920  37804 S   0.3   1.5   0:03.98 mongod   
+   4039 exam      20   0 5083020 217076 110944 S   0.3   2.7   0:12.13 gnome-s+ 
+   4914 exam      20   0  401988  46620  36144 S   0.3   0.6   0:02.63 gnome-t+ 
+      1 root      20   0  164032  10416   7704 S   0.0   0.1   0:01.72 systemd  
+      2 root      20   0       0      0      0 S   0.0   0.0   0:00.00 kthreadd 
+      3 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_gp   
+      4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_par+ 
+      6 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+ 
+      9 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 mm_perc+ 
+     10 root      20   0       0      0      0 S   0.0   0.0   0:00.00 rcu_tas+ 
+     11 root      20   0       0      0      0 S   0.0   0.0   0:00.00 rcu_tas+ 
+     12 root      20   0       0      0      0 S   0.0   0.0   0:00.02 ksoftir+ 
+     13 root      20   0       0      0      0 R   0.0   0.0   0:01.17 rcu_sch+ 
+     14 root      rt   0       0      0      0 S   0.0   0.0   0:00.00 migrati+ 
+     
+Q5)
+
+~/FISAT/Day1$ pwd
+/home/exam/FISAT/Day1
+
+# SHELL program output
+
+
+Menu 
+ 1. Area of circle 
+ 2. Area of rectangle 
+ 3. Area of triangle
+Enter your choice:
+1
+Enter the radious of circle:
+2
+The area of circle is:
+12
+
+Menu 
+ 1. Area of circle 
+ 2. Area of rectangle 
+ 3. Area of triangle
+Enter your choice:
+2
+Enter the length of rectangle:
+2
+Enter the breadth of rectangle:
+4
+The area of rectangle is:
+8
+
+Menu 
+ 1. Area of circle 
+ 2. Area of rectangle 
+ 3. Area of triangle
+Enter your choice:
+3
+Enter the base:
+3
+Enter the height:
+4
+Enter the area of triangle is:
+6
+
+
+
